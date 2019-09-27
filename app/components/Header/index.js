@@ -1,17 +1,16 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 
-import A from './A';
-import Img from './Img';
-import NavBar from './NavBar';
-import HeaderLink from './HeaderLink';
-import Banner from './banner.jpg';
-import messages from './messages';
+
 
 function Header() {
   return (
     <div>
-      <A href="https://www.reactboilerplate.com/">
+      <span>Discover</span>
+      <button type="button">Popular</button>
+      <button type="button">Trends</button>
+      <button type="button">Newest</button>
+      <button type="button">TopRated</button>
+      {/* <A href="https://www.reactboilerplate.com/">
         <Img src={Banner} alt="react-boilerplate - Logo" />
       </A>
       <NavBar>
@@ -21,7 +20,7 @@ function Header() {
         <HeaderLink to="/features">
           <FormattedMessage {...messages.features} />
         </HeaderLink>
-      </NavBar>
+      </NavBar> */}
     </div>
   );
 }
